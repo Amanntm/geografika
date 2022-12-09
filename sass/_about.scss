@@ -1,0 +1,86 @@
+@import 'vars';
+
+
+.about{
+    background-color: $about-bg;
+    padding-bottom: 100px;
+    &__title{
+            font-family: 'Bitter';
+            font-style: normal;
+            font-weight: 300;
+            font-size: 45px;
+            line-height: 48px;
+            text-align: center;
+            color: white;
+            padding-bottom: 22px;
+    }
+    &__list{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+    &__item{ 
+        transition: background-color .5s;
+        width: 100%;
+        flex: 1 1 337px;
+        border-radius: 20px;
+        cursor: pointer;
+        &:hover{
+            background-color: $red;
+            border-radius: 20px;
+            .about__item-img-wrapper {
+                &::after {
+                        content: '';
+                        background: url('/images/sprite.png') no-repeat -250px -361px;
+                            width: 31px;
+                            height: 27px;
+                        display: block;
+                        left: 50%;
+                        transform: translate(-50%);
+                        position: relative;
+                        bottom: 20px;
+                    }
+            }
+
+        }
+
+        &-img-wrapper{
+            position: relative;
+            &::after{
+                content: '';
+                background: url('/images/sprite.png') no-repeat -250px -314px;
+                width: 31px;
+                height: 27px;
+                display: block;
+                left: 50%;
+                transform: translate(-50%);
+                position: relative;
+                bottom: 20px;
+            }
+        }
+        &-img{
+            width: 100%;
+        }
+        &-title{
+                font-family: 'Montserrat Alternates';
+                font-style: normal;
+                font-weight: 900;
+                font-size: 38px;
+                color: white;
+                position: absolute;
+                bottom: 60px;
+                text-align: center;
+                width: 100%;
+        }
+        &-description{
+                font-family: 'Bitter';
+                font-style: normal;
+                font-weight: 300;
+                font-size: 18px;
+                line-height: 120%;
+                text-align: center;
+                color: white;
+                padding: 0 50px;
+        }
+    }
+}

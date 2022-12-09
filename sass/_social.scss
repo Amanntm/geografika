@@ -1,0 +1,100 @@
+@import 'vars';
+
+
+.social {
+    height: 530px;
+    background-image: url('/images/subscribe.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    &__wrapper {
+        max-width: 630px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    &__title{
+            font-family: 'Montserrat Alternates';
+            font-style: normal;
+            font-weight: 900;
+            font-size: 45px;
+            line-height: 100%;
+            text-align: center;
+            padding-bottom: 15px;
+    }
+    &__sub-title {
+        font-family: 'Montserrat Alternates';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        text-align: center;
+        color: #FFFFFF;
+       padding: 25px 15px;
+    }
+
+    &__btn{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color:rgba(0, 0, 0, 0.6);;
+        width: 90px;
+        height: 90px;
+        border-radius: 3px;
+       // background: url('/images/sprite.png') no-repeat -81px -411px;
+        //width: 53px;
+        //height: 29px;
+    }
+    &__btn-vk{
+        display: block;
+         background: url('/images/sprite.png') no-repeat -81px -411px;
+            width: 53px;
+            height: 29px;
+            display: block;
+    }
+    &__btn-wrappper{
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    &__btn-tm {
+        display: block;
+        background: url('/images/sprite.png') no-repeat -439px -223px;
+            width: 57px;
+            height: 48px;
+    }
+    input{
+        background: #FFFFFF;
+        border: 2px solid #002F55;
+        border-radius: 4px;
+        height: 53px;
+        width: 417px;
+        margin-right: 20px;
+        &::placeholder{
+            font-family: 'Montserrat Alternates';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 23px;
+            color: $tours-title;
+        }
+    }
+    button{
+            padding: 15px 20px;
+            height: 53px;
+            background: #A62318;
+            border: 2px solid #8C1005;
+            border-radius: 4px;
+            font-family: 'Montserrat Alternates';
+            font-style: normal;
+            font-weight: 800;
+            font-size: 16px;
+            line-height: 20px;
+            /* identical to box height, or 125% */
+        
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            color: white;
+    }
+}

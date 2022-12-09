@@ -1,0 +1,114 @@
+@import 'vars';
+
+.footer {
+    background-color: $tours-calendar-text;
+    height: 215px;
+    &__wrapper {
+        padding: 45px 0;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    &__left-block {
+        max-width: 325px;
+    }
+
+    &__inn {
+        font-family: 'Bitter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 21px;
+        color: #4772A7;
+        width: 300px;
+
+    }
+
+    &__social-btn {
+        display: flex;
+        gap: 20px;
+        padding-top: 20px;
+        align-items: center;
+        &--vk{
+            display: block;
+            width: 31px;
+            height: 18px;
+        }
+        &--tm{
+            display: block;
+            width: 28px;
+            height: 23px;
+        }
+    }
+    &__social-btn-slogan{
+        position: relative;
+        border: 1px solid $footer-color-text;
+        padding: 10px;
+        border-radius: 5px;
+        font-family: 'Montserrat Alternates';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        color: #FFFFFF;
+        &::after{
+                content: '';
+                left: -19px;
+                top: 10;
+                position: absolute;
+                border:  solid transparent;
+                border-width: 10px;
+                border-right: 10px solid $tours-calendar-text;
+        }
+        &::before {
+            content: '';
+            left: -20px;
+            top: 10;
+            position: absolute;
+            border: solid transparent;
+            border-width: 10px;
+           
+            border-right: 10px solid $footer-color-text;
+        }
+
+
+    }
+
+    &__right-block {}
+
+    &__nav {
+        display: flex;
+        gap: 40px;
+        justify-content: right;
+        padding-bottom: 60px;
+    }
+
+    &__nav-item {
+        font-family: 'Montserrat Alternates';
+        font-style: normal;
+        font-weight: 800;
+        font-size: 16px;
+        line-height: 20px;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        text-decoration: none;
+    }
+
+    &__copyright {
+        text-align: right;
+        color: $footer-color-text;
+        a{
+            text-decoration: none;
+            font-family: 'Bitter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 18px;
+            /* identical to box height */
+        
+            text-align: right;
+            color: white;
+        }
+    }
+}

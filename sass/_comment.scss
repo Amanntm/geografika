@@ -1,0 +1,77 @@
+@import 'vars';
+.comment {
+        background-color: $comment-bg;
+        height: 570px;
+        display: flex;
+        align-items: center;
+    &__list {
+        max-width: 932px;
+        margin: 0 auto;
+    }
+
+    &__title {
+        font-family: 'Montserrat Alternates';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 26px;
+        text-align: center;
+        letter-spacing: 0.02em;
+        text-transform: uppercase;
+        color: white;
+        padding-bottom: 25px;
+
+    }
+
+    &__item {
+        display: flex;
+        gap: 35px;
+    }
+
+    &__img {
+        display: block;
+        width: 120px;
+        height: 120px;
+        border-radius: 10px;
+    }
+
+    &__text {
+        font-family: 'Bitter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 130%;
+    }
+
+    &__author {
+        font-family: 'Bitter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 130%;
+        color: $comment-author-text-color;
+        padding-top: 20px;
+    }
+
+    .owl-dots {
+        margin-top: 0;
+        position: relative;
+        pointer-events: none;
+        z-index: 9999;
+        span{
+            border: 1px solid #E4D8BC;
+            background: none!important;
+            width: 16px!important;
+            height: 16px!important;
+        }
+       .active{
+            span{
+                background-color: white!important;
+                border: none;
+            }
+       }
+       
+    }
+
+
+}
